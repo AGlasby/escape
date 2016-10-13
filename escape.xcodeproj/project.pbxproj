@@ -16,6 +16,10 @@
 		E782969C1DAA95F1008F5665 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E782969A1DAA95F1008F5665 /* Main.storyboard */; };
 		E782969E1DAA95F2008F5665 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E782969D1DAA95F2008F5665 /* Assets.xcassets */; };
 		E78296A11DAA95F2008F5665 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E782969F1DAA95F2008F5665 /* LaunchScreen.storyboard */; };
+		E78296A91DAAA0B8008F5665 /* GameStartScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E78296A81DAAA0B8008F5665 /* GameStartScene.sks */; };
+		E78296AB1DAAA10A008F5665 /* GameOverScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E78296AA1DAAA10A008F5665 /* GameOverScene.sks */; };
+		E78296AE1DAAA17F008F5665 /* GameStartScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E78296AD1DAAA17F008F5665 /* GameStartScene.m */; };
+		E78296B11DAAA197008F5665 /* GameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E78296B01DAAA197008F5665 /* GameOverScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,12 @@
 		E782969D1DAA95F2008F5665 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E78296A01DAA95F2008F5665 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E78296A21DAA95F2008F5665 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E78296A81DAAA0B8008F5665 /* GameStartScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameStartScene.sks; sourceTree = "<group>"; };
+		E78296AA1DAAA10A008F5665 /* GameOverScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOverScene.sks; sourceTree = "<group>"; };
+		E78296AC1DAAA17F008F5665 /* GameStartScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameStartScene.h; sourceTree = "<group>"; };
+		E78296AD1DAAA17F008F5665 /* GameStartScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameStartScene.m; sourceTree = "<group>"; };
+		E78296AF1DAAA197008F5665 /* GameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverScene.h; sourceTree = "<group>"; };
+		E78296B01DAAA197008F5665 /* GameOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,12 +75,10 @@
 		E78296891DAA95F1008F5665 /* escape */ = {
 			isa = PBXGroup;
 			children = (
+				E78296B21DAAA1A2008F5665 /* GameScense */,
 				E782968D1DAA95F1008F5665 /* AppDelegate.h */,
 				E782968E1DAA95F1008F5665 /* AppDelegate.m */,
-				E78296901DAA95F1008F5665 /* GameScene.sks */,
 				E78296921DAA95F1008F5665 /* Actions.sks */,
-				E78296941DAA95F1008F5665 /* GameScene.h */,
-				E78296951DAA95F1008F5665 /* GameScene.m */,
 				E78296971DAA95F1008F5665 /* GameViewController.h */,
 				E78296981DAA95F1008F5665 /* GameViewController.m */,
 				E782969A1DAA95F1008F5665 /* Main.storyboard */,
@@ -88,6 +96,22 @@
 				E782968B1DAA95F1008F5665 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E78296B21DAAA1A2008F5665 /* GameScense */ = {
+			isa = PBXGroup;
+			children = (
+				E78296A81DAAA0B8008F5665 /* GameStartScene.sks */,
+				E78296AC1DAAA17F008F5665 /* GameStartScene.h */,
+				E78296AD1DAAA17F008F5665 /* GameStartScene.m */,
+				E78296901DAA95F1008F5665 /* GameScene.sks */,
+				E78296941DAA95F1008F5665 /* GameScene.h */,
+				E78296951DAA95F1008F5665 /* GameScene.m */,
+				E78296AA1DAAA10A008F5665 /* GameOverScene.sks */,
+				E78296AF1DAAA197008F5665 /* GameOverScene.h */,
+				E78296B01DAAA197008F5665 /* GameOverScene.m */,
+			);
+			name = GameScense;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +173,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E78296AB1DAAA10A008F5665 /* GameOverScene.sks in Resources */,
 				E782969C1DAA95F1008F5665 /* Main.storyboard in Resources */,
+				E78296A91DAAA0B8008F5665 /* GameStartScene.sks in Resources */,
 				E78296911DAA95F1008F5665 /* GameScene.sks in Resources */,
 				E782969E1DAA95F2008F5665 /* Assets.xcassets in Resources */,
 				E78296A11DAA95F2008F5665 /* LaunchScreen.storyboard in Resources */,
@@ -164,9 +190,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E78296AE1DAAA17F008F5665 /* GameStartScene.m in Sources */,
 				E78296991DAA95F1008F5665 /* GameViewController.m in Sources */,
 				E782968F1DAA95F1008F5665 /* AppDelegate.m in Sources */,
 				E78296961DAA95F1008F5665 /* GameScene.m in Sources */,
+				E78296B11DAAA197008F5665 /* GameOverScene.m in Sources */,
 				E782968C1DAA95F1008F5665 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +320,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = glasby.escape;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -304,6 +333,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = glasby.escape;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
