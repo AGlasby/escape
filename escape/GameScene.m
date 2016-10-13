@@ -44,7 +44,7 @@ static const uint32_t categoryBall = 0x1 << 0;
     light.categoryBitMask = 0x1;
     light.falloff = 1;
     light.ambientColor = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:1.0];
-    light.ambientColor = [UIColor colorWithRed:0.07 green:0.7 blue:1.0 alpha:1.0];
+    light.ambientColor = [UIColor colorWithRed:0.7 green:0.7 blue:1.0 alpha:1.0];
     light.shadowColor = [[UIColor alloc] initWithRed:0.0 green:0.0 blue:0.0 alpha:1.0];
     light.zPosition = 1;
 
@@ -66,7 +66,7 @@ static const uint32_t categoryBall = 0x1 << 0;
     blueBall.physicsBody.collisionBitMask = categoryBall | categoryFence | categoryBlock | categoryPaddle;
     blueBall.physicsBody.contactTestBitMask = categoryFence | categoryPaddle;
     blueBall.physicsBody.usesPreciseCollisionDetection = YES;
-//    [blueBall addChild:light];
+    [blueBall addChild:light];
     [self addChild:blueBall];
 
     SKSpriteNode *redBall = [SKSpriteNode spriteNodeWithImageNamed:@"red ball.png"];
